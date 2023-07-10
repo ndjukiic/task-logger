@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-sm-5">
+      <h4>{{ task.naziv }}</h4>
+  </div>
+  <div class="col-sm-5">
+    <button
+    class="btn btn-success"
+    *ngIf="!task.isCompleted"
+    (click)="onCompleted()"
+  >
+    Task completed
+  </button>
+  <button class="btn btn-danger" (click)="onDelete()">X</button>
+  </div>
+</div>
+
+  

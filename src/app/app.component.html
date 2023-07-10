@@ -1,0 +1,26 @@
+<hr />
+<br />
+<div class="container" id="container">
+  <div class="row">
+    <app-task-form-component></app-task-form-component>
+    <div class="col-sm stil1">
+      <app-task-list-component></app-task-list-component>
+    </div>
+    <div class="col-sm stil1">
+      <h2>Završeni zadaci</h2>
+      <hr />
+      <ng-container *ngFor="let task of zavrseni; let i = index">
+        <div class="row" style="width: 50%">
+          <div class="col-sm-5">
+            <h4>{{ zavrseni[i].naziv }}</h4>
+          </div>
+          <div class="col-sm-5">
+            <button type="button" class="btn btn-danger" (click)="onDelete(i)">
+              X
+            </button>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>

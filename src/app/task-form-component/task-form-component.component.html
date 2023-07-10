@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <form (ngSubmit)="onSubmitForm(f)" #f="ngForm">
+        <label for="name">Unesite naziv današnjeg zadatka: </label>
+        <input type="text" id="name" name="name" class="form-control" style="width:70%" ngModel required />
+        <p *ngIf="!f.valid && f.touched">Molimo Vas, unesite validno ime Vašeg zadatka</p>
+        <button class="btn btn-primary">Submit</button>
+    </form>
+    </div>
+  </div>
+</div>

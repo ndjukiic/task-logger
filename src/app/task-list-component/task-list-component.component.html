@@ -1,0 +1,12 @@
+<h2>Nezavršeni zadaci</h2>
+<hr />
+<div class="row">
+  <div class="col-xs-12">
+    <app-task-list-item-component
+      *ngFor="let singleTask of tasksElement; let i = index"
+      [task]="singleTask"
+      [index]="i"
+    >
+    </app-task-list-item-component>
+  </div>
+</div>
