@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TasksService } from './shared/tasks.service';
 
 @Component({
   selector: 'app-root',
@@ -10,8 +11,10 @@ export class AppComponent {
   nezavrseni = [];
   zavrseni = [];
 
+  constructor(private taskService: TasksService) {}
+
   onDelete(index: number) {
-    this.zavrseni.splice(index, 1);
-    console.log(this.zavrseni);
+    this.taskService.completedTasks.splice(index, 1);
+    this.zavrseni = this.taskService.completedTasks.slice(index);
   }
 }
