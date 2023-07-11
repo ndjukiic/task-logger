@@ -1,8 +1,13 @@
 
-.stil1,
-.stil2{
+.stil1{
+    border: 1px solid rgb(219, 197, 197);
+    box-shadow: 2px 1px 1px rgb(0,0,0,0.2);
     border-radius: 8px;
     margin-top: 3rem;
     padding: 2rem;
     background-color: rgb(243, 229, 209);
+}
+
+.stil1 hr{
+    border-color: rgb(219,197,197);
 }
