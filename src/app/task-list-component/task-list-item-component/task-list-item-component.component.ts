@@ -25,5 +25,7 @@ export class TaskListItemComponentComponent {
     this.appComponent.zavrseni = this.taskService.completedTasks.slice();
   }
 
-  onDelete() {}
+  onDelete() {
+    this.taskService.tasks.splice(this.index, 1);
+  }
 }

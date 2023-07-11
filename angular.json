@@ -92,7 +92,7 @@
           "builder": "@netlify-builder/deploy:deploy",
           "options": {
             "outputPath": "dist/domaci",
-            "netlifyToken": "",
+            "netlifyToken": "ez7_4ym86BiyAvfEtLjJwBZY3jgiwagnnI-B_kxoKYA",
             "siteId": "c29aa164-ae74-471d-afb1-8089d15883c2"
           }
         }
